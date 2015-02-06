@@ -1,6 +1,6 @@
 # DBMorphAnimatedTransition
 
-![alt tag](https://cloud.githubusercontent.com/assets/5367914/6039287/7df3a884-ac33-11e4-9f64-2f5b9bfb9099.gif)
+![alt tag](https://cloud.githubusercontent.com/assets/5367914/6086919/6a6de3a6-ae13-11e4-80bb-a4ab7b6e57a0.gif)
 
 ####What is this repository for?####
 
