@@ -1,14 +1,33 @@
 //
 //  InitialViewController.swift
-//  DBMorphAnimatedTransition
+//
+//
+//  GitHub
+//  https://github.com/DevonBoyer/DBMorphAnimatedTransition
+//
 //
 //  Created by Devon Boyer on 2015-02-04.
 //  Copyright (c) 2015 Devon Boyer. All rights reserved.
+//
+//  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
 import UIKit
 
 class InitialViewController: UIViewController, UIViewControllerTransitioningDelegate, DBMorphAnimatedTransitionViewSource {
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        UIApplication.sharedApplication().setStatusBarStyle(.LightContent, animated: true)
+
+    }
     
     @IBOutlet weak var button: UIButton!
     

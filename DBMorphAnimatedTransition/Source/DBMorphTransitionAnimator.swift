@@ -1,9 +1,15 @@
 //
 //  DBMorphTransitionAnimator.swift
-//  DBMorphAnimatedTransition
+//
+//
+//  GitHub
+//  https://github.com/DevonBoyer/DBMorphAnimatedTransition
+//
 //
 //  Created by Devon Boyer on 2015-02-04.
 //  Copyright (c) 2015 Devon Boyer. All rights reserved.
+//
+//  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
 import UIKit
@@ -24,8 +30,9 @@ class DBMorphTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning
         let toViewController = transitionContext.viewControllerForKey(UITransitionContextToViewControllerKey)!
         let fromViewController = transitionContext.viewControllerForKey(UITransitionContextFromViewControllerKey)!
         let containerView = transitionContext.containerView()
-        
+    
         // A little special treatment if the toVC or fromVC is a navigation controller, this really only applies during modal transitions where the fromVC and toVC do not implicitly return the topViewController like a push transition does
+       
         var initialView: UIView!
         if fromViewController is UINavigationController {
             initialView = ((fromViewController as UINavigationController).topViewController as DBMorphAnimatedTransitionViewSource).viewForMorphTransition()
@@ -39,6 +46,7 @@ class DBMorphTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning
         } else {
             finalView = (toViewController as DBMorphAnimatedTransitionViewSource).viewForMorphTransition()
         }
+        
         
         // We are going to need to create a "copy" of the view that the animation will act on
         let animatingView = UIView(frame: initialView.frame)
