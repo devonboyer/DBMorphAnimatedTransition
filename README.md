@@ -11,6 +11,8 @@ https://medium.com/@devonboyer/a-transition-with-some-personality-32e43a7404ed
 
 ####Supports####
 
+Written in Swift.
+
 iOS 7.0+
 
 
